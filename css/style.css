@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  /* background-color: #000; */
+  
+}
+
+@font-face {
+	font-family: Orbitron;
+	src: url(../webfonts/Orbitron-Regular.eot);
+	src: url(../webfonts/Orbitron-Regular.woff) format("woff");
+}
+
+body {
+	font-family: Orbitron, sans-serif;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.slide-list {
+  position: relative;
+  display: flex;
+  width: 400vw;
+
+  transition: all 1s ease-in-out;
+}
+
+.slide-list div {
+  width: 100vw;
+  height: 100vh;
+}
+
+.back-morning {
+  background-image: url(/img/bg_morning.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back-afternoon {
+  background-image: url(/img/bg_afternoon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back-evening {
+  background-image: url(/img/bg_evening.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back-night {
+  background-image: url(/img/bg_night.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: absolute;
+  left: 2.5%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+
+.logo img{
+  width: 100px;
+  margin-top: 30px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 50px;
+}
+
+nav>ul>li>a {
+  display: block;
+  padding: 40px 0px 0 20px;
+  color: #000;
+  font-size: 15px;
+}
+
+.logo_text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.text_big {
+  font-size: 40px;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 40px;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper>button{
+  font-family: Orbitron, sans-serif;
+
+  width: calc(99%/4);
+  height: 30px;
+  margin-right: 4px;
+
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.button-wrapper>button :last-child {
+  margin-right: 0;
+}
+
+.btn.act {
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+/* main {
+  width: 100vw;
+  overflow: hidden;
+} */
+
+section {
+  position: absolute;
+  width: 650px;
+  height: 500px;
+  overflow:hidden;
+
+  z-index: 700;
+  bottom: 10%;
+  right: 0%;
+
+  /* border: 1px solid blue; */
+}
+
+.hand-wrapper {
+  position: absolute;
+  display: flex;
+}
+
+.hand-wrapper>div>img {
+  width: 800px;
+}
+
