@@ -162,3 +162,33 @@ section {
   width: 800px;
 }
 
+.clock {
+  display: flex;
+  justify-content: center;
+  width: 340px;
+  font-size: 38px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  right: 16%;
+  z-index: 700;
+  /* border: 1px solid red; */
+}
+
+.clock li {
+  width: 68px;
+  text-align: center;
+}
+
+.clock li:nth-child(1){
+  margin-right: -20px;
+}
+
+.clock li:nth-child(3){
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.clock li:last-child {
+  margin-left: -20px;
+}
