@@ -132,7 +132,6 @@ header {
 nav ul {
   display: flex;
   margin-right: 50px;
-  border: 1px solid red;
 }
 
 nav>ul>li {
