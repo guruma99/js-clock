@@ -18,13 +18,64 @@ body {
 	font-family: Orbitron, sans-serif;
 }
 
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper > img:nth-child(1) {
+	position: absolute;
+  width: 65%;
+	top: -10px;
+	left: 0;
+	opacity: .8;
+	animation: ani1 100s linear infinite;
+	z-index: 500;
+}
+
+.wrapper > img:nth-child(2) {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	opacity: .8;
+	animation: ani2 100s linear infinite;
+	z-index: 400;
+}
+
+@keyframes ani1 {
+	0% {
+		left: -100vw;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+
+@keyframes ani2 {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 1960px;
+		opacity: 0;
+	}
+	60% {
+		left: -1840px;
+		opacity: 0.8;
+	}
+	100%{
+		left: 0;
+	}
+}
+
+
 .slide-wrapper {
   overflow: hidden;
   /* position: relative; */
 }
 
 .slide-list {
-  position: relative;
+  /* position: relative; */
   display: flex;
   width: 400vw;
 
@@ -83,21 +134,48 @@ nav ul {
   margin-right: 50px;
 }
 
+nav>ul>li {
+  padding: 40px 0px 0 20px;
+}
+
 nav>ul>li>a {
   display: block;
-  padding: 40px 0px 0 20px;
   color: #000;
   font-size: 15px;
+  position: relative;
+  z-index: 1000;
+}
+
+.underline::before {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: #000;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -5px;
+  scale: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.underline:hover::before {
+  display: block;
+  scale: 1;
 }
 
 .logo_text {
   position: absolute;
   top: 40%;
   left: 10%;
+  z-index: 600;
 }
 
 .text_big {
   font-size: 40px;
+}
+
+.text_big span {
+ color: #777;
 }
 
 footer {
@@ -146,6 +224,7 @@ section {
   height: 500px;
   overflow:hidden;
 
+
   z-index: 700;
   bottom: 10%;
   right: 0%;
@@ -154,25 +233,84 @@ section {
 }
 
 .hand-wrapper {
-  position: absolute;
   display: flex;
+  /* border: 1px solid red; */
+  /* z-index: 900; */
 }
 
 .hand-wrapper>div>img {
   width: 800px;
 }
 
+.phone_display {
+  position: absolute;
+  z-index: 800;
+  width: 357px;
+  height: 200px;
+  bottom: 41.2%;
+  left: 63.5%;
+  /* border: 2px solid green; */
+  overflow: hidden;
+}
+
+.phone_display > img:nth-child(1) {
+	position: relative;
+  width: 70%;
+	top: 10px;
+	left: 0;
+	opacity: .8;
+	animation: ani3 25s linear infinite;
+	z-index: 500;
+  /* border: 2px solid red; */
+}
+
+.phone_display > img:nth-child(2) {
+	position: absolute;
+  width: 70%;
+	opacity: .8;
+	animation: ani4 20s linear infinite;
+	z-index: 400;
+  /* border: 2px solid black; */
+}
+
+@keyframes ani3 {
+	0% {
+		left: -400px;
+	}
+	100% {
+		left: 400px;
+	}
+}
+
+@keyframes ani4 {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 400px;
+		opacity: 0;
+	}
+	60% {
+		left: -600px;
+		opacity: 0.8;
+	}
+	100%{
+		left: 0;
+	}
+}
+
 .clock {
   display: flex;
   justify-content: center;
-  width: 340px;
+  width: 320px;
   font-size: 38px;
   height: 100px;
   position: absolute;
-  top: 40%;
-  right: 16%;
-  z-index: 700;
+  top: 41%;
+  right: 15.5%;
+  z-index: 1300;
   /* border: 1px solid red; */
+  color: #000;
 }
 
 .clock li {
