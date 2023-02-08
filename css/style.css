@@ -79,7 +79,7 @@ body {
   display: flex;
   width: 400vw;
 
-  transition: all 1s ease-in-out;
+  /* transition: all 1s ease-in-out; */
 }
 
 .slide-list div {
