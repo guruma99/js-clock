@@ -39,7 +39,7 @@ body {
 	left: 0;
 	opacity: .8;
 	animation: ani2 100s linear infinite;
-	z-index: 400;
+	z-index: 550;
 }
 
 @keyframes ani1 {
