@@ -88,28 +88,28 @@ body {
 }
 
 .back-morning {
-  background-image: url(../img/bg_morning.jpg);
+  background-image: url("../img/bg_morning.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .back-afternoon {
-  background-image: url(../img/bg_afternoon.jpg);
+  background-image: url("../img/bg_afternoon.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .back-evening {
-  background-image: url(../img/bg_evening.jpg);
+  background-image: url("../img/bg_evening.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .back-night {
-  background-image: url(../img/bg_night.jpg);
+  background-image: url("../img/bg_night.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
