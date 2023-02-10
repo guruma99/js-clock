@@ -196,7 +196,7 @@ footer {
   font-family: Orbitron, sans-serif;
 
   width: calc(99%/4);
-  height: 30px;
+  height: 40px;
   margin-right: 4px;
 
   border: none;
@@ -247,8 +247,8 @@ section {
   z-index: 800;
   width: 357px;
   height: 200px;
-  bottom: 41.2%;
-  left: 63.5%;
+  bottom: 35%;
+  right: 10.8%;
   /* border: 2px solid green; */
   overflow: hidden;
 }
@@ -303,11 +303,11 @@ section {
   display: flex;
   justify-content: center;
   width: 320px;
-  font-size: 38px;
+  font-size: 45px;
   height: 100px;
   position: absolute;
-  top: 41%;
-  right: 15.5%;
+  top: 50%;
+  right: 13%;
   z-index: 1300;
   /* border: 1px solid red; */
   color: #000;
