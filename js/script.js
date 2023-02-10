@@ -32,7 +32,7 @@ btn4.addEventListener('click', function () {
 
 function Slide(index) {
   var list = index * -100;
-  var wrapper = index * -800;
+  var wrapper = index * -1100;
   document.querySelector('.slide-list').style.transform = `translateX(${list}vw)`;
   document.querySelector('.hand-wrapper').style.transform = `translateX(${wrapper}px)`;
 
